@@ -1,4 +1,8 @@
-[中文版](README_CN.md) | [English](README.md)
+<div align="center">
+  <p align="right">
+    <span> 🌎English </span> | <a href="README_CN.md"> 🇨🇳中文 </a>
+  </p>
+</div>
 
 # IR Papers Retrieval System
 
