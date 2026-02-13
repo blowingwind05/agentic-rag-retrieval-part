@@ -1,0 +1,22 @@
+# IR Papers Retrieval System Configuration
+data_path: "./"
+json_file: "ir_papers.json"
+
+# Embedding API Configuration (DMXAPI .com)
+use_api_emb: true
+api_key_emb: ""
+base_url_emb: ""  # 注意是 .com
+model_emb: ""
+
+# Rerank API Configuration (DMXAPI .cn)
+use_api_rerank: true
+api_key_rerank: ""
+base_url_rerank: ""  # 注意是 .cn
+model_rerank: ""
+
+top_k_retrieval: 60
+top_k_final: 10
+batch_size: 8
+device: "cuda"  # Will be overridden if CUDA not available
+max_retries: 3
+fusion_k: 60

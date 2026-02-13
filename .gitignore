@@ -1,3 +1,3 @@
-*.yaml
+config.yaml
 *.json
 llm-agentic-legal-information-retrieval.ipynb

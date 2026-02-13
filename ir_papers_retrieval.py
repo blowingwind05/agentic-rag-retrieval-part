@@ -247,7 +247,7 @@ class IRPapersRetriever:
         for arxiv_id in set(dense_res) | set(sparse_res):
             r_dense = list(dense_res).index(arxiv_id) if arxiv_id in dense_res else 2 * top_k
             r_sparse = list(sparse_res).index(arxiv_id) if arxiv_id in sparse_res else 2 * top_k
-            fused[arxiv_id] = (1 / (60 + r_dense)) + (1 / (60 + r_sparse))
+            fused[arxiv_id] = (1 / (CONFIG["fusion_k"] + r_dense)) + (1 / (CONFIG["fusion_k"] + r_sparse))
 
         return sorted(fused.items(), key=lambda x: x[1], reverse=True)[:top_k]
 
